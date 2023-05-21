@@ -38,6 +38,9 @@ font-size: 40px;
     header .menu-icon {
       display: none;
     }
+    main{
+      padding-top: 10px 20px;
+    }
   }
 
   header .menu {
@@ -92,8 +95,9 @@ nav ul li a:active{
     color: rgb(81, 0, 255);
     font-family: 'Bebas Neue', cursive;
     font-size: 30px;
+  }
 }
-}
+
   header a {
     text-decoration: none;
     color: #fff;
@@ -411,8 +415,9 @@ label{
 }
 
 input{
-  width: 300px;
-  margin-left: 10px;
+  width: 90%;
+  margin-left: 10px; 
+  padding: 0 10px;
 }
 
 select{
@@ -470,3 +475,47 @@ textarea {
   text-align: center;
   padding: 100px; 
 }
+
+.title_platform{
+color: rgb(240, 216, 3);
+font-size: 20px;
+font-family: 'Anton', sans-serif;
+text-shadow: rgb(0, 0, 0) 4px 5px;
+text-align: center;
+}
+
+.subtittle_platform{
+  color: #000000;
+  font-size: 20px;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+}
+
+.end_platform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-thanks{
+  color: #000000;
+  font-size: 20px;
+  font-weight: 10px;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+}
+
+.text-platform{
+  color: #000000;
+  font-size: 10px;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+}
+
+.img-icon{
+  width:20px;
+}
+
+.img-input{
+  display: flex;
+} 
