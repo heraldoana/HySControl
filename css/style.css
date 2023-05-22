@@ -162,12 +162,9 @@ nav ul li a:active{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
     padding-top: 150px; 
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     text-align: center;
 }
@@ -198,14 +195,11 @@ p{
     h2{
         font-size: 50px;
     }
-
     .principal-box{
       background-image: url(/img/fondohome.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      height: 100%;
-      width: 100%;
       padding-top: 200px; 
       padding-bottom: 200px; 
       display: flex;
