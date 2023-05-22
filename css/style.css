@@ -158,7 +158,7 @@ nav ul li a:active{
   }
 
 .principal-box{
-    background-image: url(/img/fondohome.jpg);
+    background-image: url(../img/fondohome.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -196,7 +196,7 @@ p{
         font-size: 50px;
     }
     .principal-box{
-      background-image: url(/img/fondohome.jpg);
+      background-image: url(../img/fondohome.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -222,7 +222,7 @@ p{
 }
 
 .secundario-box {
-    background-image: url(/img/fondopagina2.jpg);
+    background-image: url(../img/fondopagina2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
