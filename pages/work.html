@@ -16,13 +16,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <!-- animate -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- CSS custom -->
         <link rel="stylesheet" href="../css/main.css">
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
     </head>
 <body>
     <header>
-        <div class="logoytitle_header_menu">
+        <div data-aos="fade-right" class="logoytitle_header_menu">
             <div class="logo_header">
                 <img class="logo" src="../img/logohyscontrol.png" alt="logo de la pagina">
             </div>
@@ -44,39 +46,39 @@
     </header>
     <main>
         <section class="paginawork">
-            <div class="container work">
+            <div data-aos="fade-down" class="container work">
                 <div class="row">
                     <div class="col-12">
                         <div class="tittle-work">
-                            <h1>TRABAJA CON NOSOTROS</h1>
+                            <h1 data-aos="fade-right">TRABAJA CON NOSOTROS</h1>
                         </div>
                         <div class="text-work">
-                            <p>Si queres unirte a nuestro equipo de trabajo, completa los siguientes datos.</p>      
+                            <p data-aos="fade-right">Si queres unirte a nuestro equipo de trabajo, completa los siguientes datos.</p>      
                         </div>
                     </div>
                 </div>
             </div>
             <form method="post" class="formulariocv">
                 <div class="input-wrapper">
-                    <label for="apellido">Apellido y Nombres:</label>
-                    <input  type="text" name="nombre" id="apellido" placeholder="Juarez Pedro Armando">                    
+                    <label data-aos="fade-right" for="apellido">Apellido y Nombres:</label>
+                    <input data-aos="fade-left" type="text" name="nombre" id="apellido" placeholder="Juarez Pedro Armando">                    
                 </div>
                 <div class="input-wrapper">
-                    <label for="correo electronico">Correo electronico:</label>
-                    <input  type="email" name="correo" id="correo" placeholder="correo@example.com">    
+                    <label data-aos="fade-right" for="correo electronico">Correo electronico:</label>
+                    <input data-aos="fade-left" type="email" name="correo" id="correo" placeholder="correo@example.com">    
                 </div>
                 <div>
-                    <label for="apellido">Cargar CV</label>
-                    <input class="btncargar" type="file" value="Buscar archivo">
+                    <label data-aos="fade-right" for="apellido">Cargar CV</label>
+                    <input data-aos="fade-left" class="btncargar" type="file" value="Buscar archivo">
                 </div>
                 <div>  
-                    <input class="btn-enviar"  type="submit" value="Enviar">  
+                    <input data-aos="fade-up" class="btn-enviar"  type="submit" value="Enviar">  
                 </div>
         </section>
     </main>
     <footer>
         <div class="datosyredes-contenedor">
-            <div class="datos">
+            <div data-aos="fade-up" class="datos">
                 <h4>Nuestros Datos</h4>
                 <ul>
                     <li>Cel: +543815115596</li>
@@ -85,7 +87,7 @@
                     <li>Dirección: 24 de Septiembre 1182.</li>
                 </ul>
             </div>
-            <div class="redes">
+            <div data-aos="fade-up" class="redes">
                 <h4>Nuestras redes sociales</h4>
                 <p>Conocenos a traves de nuestras redes</p>
                 <img src="../img/iconoinstagram.png" alt="logo de instagram" width="100px">
@@ -95,6 +97,13 @@
         <div class="whatsapp">
             <a href="https://wa.me/543815115596" target="_blank"> <img src="../img/logowhatsapp.png" alt="logo whatsapp" width="50px"> </a> 
         </div>    
-    </footer>  
+    </footer>
+    <!--Js Bootstrap  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- AOS animate -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>  
 </body>
 </html>

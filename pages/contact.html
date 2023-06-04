@@ -16,13 +16,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <!-- animate -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- CSS custom -->
         <link rel="stylesheet" href="../css/main.css">
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
     </head>
 <body>
     <header>
-        <div class="logoytitle_header_menu">
+        <div data-aos="fade-right" class="logoytitle_header_menu">
             <div class="logo_header">
                 <img class="logo" src="../img/logohyscontrol.png" alt="logo de la pagina">
             </div>
@@ -43,49 +45,49 @@
         </div>       
     </header>
     <main class="paginacontact">
-        <div class="caratula-contacto">
+        <div data-aos="fade-up" class="caratula-contacto">
             <h1>Contacto</h1>
         </div>
         <section class="contact">
-            <p class="contact-text">Por favor, rellene los siguientes campos.</p>
+            <p data-aos="fade-up" class="contact-text">Por favor, rellene los siguientes campos.</p>
                 <form method="post" class="formulariocontacto">
                     <div class="input-wrapper">    
-                        <label for="apellido">Apellido y Nombres:</label>
-                        <img class="input-icon" src="../img/iconname.png" alt="icono nombre" width="30px">
-                        <input  type="text" name="apellido" id="apellido" placeholder="Apellido"> 
+                        <label data-aos="fade-right" for="apellido">Apellido y Nombres:</label>
+                        <img data-aos="fade-left"class="input-icon" src="../img/iconname.png" alt="icono nombre" width="30px">
+                        <input data-aos="fade-up" type="text" name="apellido" id="apellido" placeholder="Apellido"> 
                     </div>
                     <div class="input-wrapper">
-                        <label for="correo electronico">Correo electronico</label>
-                        <img class="input-icon" src="../img/iconcorreo.png" alt="icono correo" width="50px">
-                        <input  type="email" name="correo" id="correo" placeholder="Ingrese correo electronico">    
+                        <label data-aos="fade-right" for="correo electronico">Correo electronico</label>
+                        <img data-aos="fade-left" class="input-icon" src="../img/iconcorreo.png" alt="icono correo" width="50px">
+                        <input data-aos="fade-up" type="email" name="correo" id="correo" placeholder="Ingrese correo electronico">    
                     </div> 
                     <div class="input-wrapper">
-                        <label for="">Teléfono</label>
-                        <img class="input-icon" src="../img/icono-telefono.png" alt="icono telefono" width="50px">
-                        <input  type="text" name="telefono" id="telefono" placeholder="Ingrese Telefono">                   
+                        <label data-aos="fade-right" for="">Teléfono</label>
+                        <img data-aos="fade-left" class="input-icon" src="../img/icono-telefono.png" alt="icono telefono" width="50px">
+                        <input data-aos="fade-up" type="text" name="telefono" id="telefono" placeholder="Ingrese Telefono">                   
                     </div>  
                     <div class="input-wrapper">
-                        <label for="consulta">Tipo de consulta</label>  
-                        <img class="input-icon" src="../img/iconquestion.png" alt="icono consulta" width="50px">
-                        <select name="Consultas" id="consultas">         
+                        <label data-aos="fade-right" for="consulta">Tipo de consulta</label>  
+                        <img data-aos="fade-left" class="input-icon" src="../img/iconquestion.png" alt="icono consulta" width="50px">
+                        <select data-aos="fade-up" name="Consultas" id="consultas">         
                             <option value="Higiene y Seguridad">Servicio de Higiene y Seguridad</option>
                             <option value="Servicio de Auditoria">Servicio de Control Documental</option>
                             <option value="Busqueda y selección">Busqueda y selección</option>
                         </select>  
                     </div class="input-wrapper">
                     <div>
-                        <label for="comentario">Agregar algun comentario.</label>
-                        <img class="input-icon" src="../img/iconcomentario.png" alt="icono comentario" width="50px">    
+                        <label data-aos="fade-right" for="comentario">Agregar algun comentario.</label>
+                        <img data-aos="fade-left" class="input-icon" src="../img/iconcomentario.png" alt="icono comentario" width="50px">    
                         <br>
-                        <textarea cols="50" rows="10" id="comentario" placeholder="Ingrese comentario." name="comentario"></textarea>
+                        <textarea data-aos="fade-up" cols="50" rows="10" id="comentario" placeholder="Ingrese comentario." name="comentario"></textarea>
                     </div> 
-                    <input class="btn-enviar"  type="submit" value="Enviar"> 
+                    <input data-aos="fade-up" class="btn-enviar"  type="submit" value="Enviar"> 
                 </form>    
         </section>        
     </main>
     <footer>
         <div class="datosyredes-contenedor">
-            <div class="datos">
+            <div data-aos="fade-up" class="datos">
                 <h4>Nuestros Datos</h4>
                 <ul>
                     <li>Cel: +543815115596</li>
@@ -94,7 +96,7 @@
                     <li>Dirección: 24 de Septiembre 1182.</li>
                 </ul>
             </div>
-            <div class="redes">
+            <div data-aos="fade-up" class="redes">
                 <h4>Nuestras redes sociales</h4>
                 <p>Conocenos a traves de nuestras redes</p>
                 <img src="../img/iconoinstagram.png" alt="logo de instagram" width="100px">
@@ -104,6 +106,13 @@
         <div class="whatsapp">
             <a href="https://wa.me/543815115596" target="_blank"> <img src="../img/logowhatsapp.png" alt="logo whatsapp" width="50px"> </a> 
         </div>    
-    </footer>               
+    </footer>
+     <!--Js Bootstrap  -->
+     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- AOS animate -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>               
 </body>
 </html>

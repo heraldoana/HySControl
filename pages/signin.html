@@ -16,13 +16,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <!-- animate -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- CSS custom -->
         <link rel="stylesheet" href="../css/main.css">
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
     </head>
 <body>
     <header>
-        <div class="logoytitle_header_menu">
+        <div data-aos="fade-right" class="logoytitle_header_menu">
             <div class="logo_header">
                 <img class="logo" src="../img/logohyscontrol.png" alt="logo de la pagina">
             </div>
@@ -99,7 +101,12 @@
             <a href="https://wa.me/543815115596" target="_blank"> <img src="../img/logowhatsapp.png" alt="logo whatsapp" width="50px"> </a> 
         </div>    
     </footer> 
-        <!--Js Bootstrap  -->
-        <script src="js/bootstrap.bundle.min.js"></script>
+    <!--Js Bootstrap  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- AOS animate -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>             
 </html>
