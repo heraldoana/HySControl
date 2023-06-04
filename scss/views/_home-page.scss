@@ -1,0 +1,98 @@
+.principal-box{
+    background-image: url(../img/fondohome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 250px; 
+    padding-bottom: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.texto-ppal {  
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    color: map-get($colores, "color-text2");
+    font-size: 20px;
+    font-family: 'Anton', cursive;
+    text-align: center;
+}
+
+.principal-box__title h1{
+    color: map-get($colores, "color-tittle1");
+    text-shadow: 50px;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+
+.secundario-box {
+    background-image: url(../img/fondopagina2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2, h3{
+    color: map-get($colores, "color-tittle2");
+    font-size: 30px;
+    font-weight: 50px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.funcionamiento-contenedor{
+    justify-content: column;
+    text-align: center;
+    }
+    
+    .funcionamiento-contenedor p{
+        font-family: 'Anton', cursive;
+        font-size: 20px;
+        color: map-get($colores, "color-text1");
+        padding: 15px;
+    }
+    
+    @media (min-width: 768px){
+        .funcionamiento-contenedor{
+            display: grid;
+            grid-template-areas: 
+            "funcion-1 funcion-2 funcion-3 funcion-4";
+            padding: 1rem;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    
+    .img-manos img{
+        width: 100%;
+    }
+    
+    aside p{
+        font-family: 'Anton', cursive;
+        font-size: 20px;
+        color: map-get($colores, "color_text1");
+        padding: 15px;   
+    }
+    
+    .elegirnos-contenedor{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    @media (min-width: 768px){
+        .elegirnos-contenedor{
+            display: grid;
+            grid-template-areas: 
+            "elegirnos-uno elegirnos-dos elegirnos-tres";
+            padding: 1rem;
+            justify-content: center;
+            text-align: center;
+            }
+        }
+    

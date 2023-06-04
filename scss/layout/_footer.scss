@@ -1,0 +1,48 @@
+footer {
+    padding: 25px;
+    color: gold;
+    background-image: linear-gradient(to top, rgb(13, 13, 13), rgb(64, 64, 34));
+    font-size: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+footer h4,h5{
+        color: #000000;
+        font-size: 30px;
+        font-weight: 50px;
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+}
+
+footer ul li{
+padding: 5px;
+list-style: none;
+font-size: 20px;
+}
+
+.datosyredes-contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px){
+  .datosyredes-contenedor{
+      display: grid;
+      grid-template-areas: 
+      "datos redes";
+      padding: 1rem;
+      gap: 15rem;
+      }
+}
+
+.datosyredes-contenedor p{
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: gold;
+}
+
+footer .whatsapp{
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+}

@@ -1,0 +1,86 @@
+.page-service{
+    padding-top: 100px;
+}
+
+.subtittle-service{
+    color: map-get($colores, "color-tittle2");
+    font-size: 40px;
+    font-weight: 50px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.tittle-1 h1{
+    color: map-get($colores, "color-tittle2");
+    text-shadow: map-get($colores, "color-sombra2") 4px 5px;
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: 50px;
+    text-align: center;
+    font-family: 'Anton', cursive;
+}
+
+.text-other{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: map-get($colores, "color-text1");
+    font-size: 30px;
+    font-family: 'Anton', cursive;
+    text-align: center;
+}
+
+.card-text{
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    color: map-get($colores, "color-text1");
+    font-size: 20px;
+    font-family: 'Anton', cursive;
+    text-align: center;
+}
+
+.text-2{
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    color: map-get($colores, "color-text1");
+    font-size: 20px;
+    font-family: 'Anton', cursive;
+    text-align: center;
+}
+
+.tittle-2 {
+    color: map-get($colores, "color-tittle2");
+    text-shadow: map-get($colores , "color-sombra2" ) 4px 5px;
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: 50px;
+    text-align: center;
+    font-family: 'Anton', cursive;
+}
+
+.logo-subtittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otherservices{
+    display: grid;
+    grid-template-columns: auto; 
+    padding: 1rem;
+    gap: 2rem;
+    justify-content: center;
+    }
+
+@media (min-width: 768px){
+.otherservices{
+    display: grid;
+    grid-template-areas: 
+    "card-1 card-2 card-3";
+    padding: 1rem;
+    gap: 2rem;
+    justify-content: center;
+    }
+}

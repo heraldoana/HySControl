@@ -1,0 +1,42 @@
+.caratula-contacto{
+    background-image: url(../img/contacto.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+.caratula-contacto h1{
+    color: map-get($colores, "color-tittle2");
+    text-shadow: map-get($colores, "color-sombra2");
+    padding-top: 350px;
+    font-size: 50px;
+    font-weight: 50px;
+    text-align: center;
+    font-family: 'Anton', cursive;
+    padding-bottom: 100px;
+}
+
+.paginacontact{
+    background-image: url(../img/fondofooter.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+.contact-text{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Anton', cursive;
+    font-size: 25px;
+    color: map-get($colores, "color-text1");
+}
+
+  

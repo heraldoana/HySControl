@@ -1,11 +1,11 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+  } */
   
-  header {
-    background-color: #333;
+  /* header {
+    background-image: linear-gradient(to top, rgb(13, 13, 13), rgb(64, 64, 34));
     color: #f6de0c;
     padding: 10px 20px;
     top: 0;
@@ -13,9 +13,9 @@
     width: 100%;
     text-align: center;
     position: fixed;
-  }
+  } */
 
-  header .menu-icon {
+  /* header .menu-icon {
     cursor: pointer;
     font-size: 28px;
   }
@@ -155,9 +155,9 @@ nav ul li a:active{
   a{
     text-decoration: none;
     color: #fff;
-  }
+  } */
 
-.principal-box{
+/* .principal-box{
     background-image: url(../img/fondohome.jpg);
     background-size: cover;
     background-position: center;
@@ -233,7 +233,7 @@ h3, h4{
     font-size: 40px;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
-}
+} */
 
 .funcionamiento-contenedor{
 justify-content: column;

@@ -1,0 +1,103 @@
+.paginawork{
+    background-image: url(../img/fondofooter.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .work{
+    background-image: url(../img/trabajaconnosotros2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .tittle-work h1{
+    color: black;
+    text-shadow: rgb(198, 166, 8) 4px 5px;
+    padding-top: 350px;
+    font-size: 50px;
+    font-weight: 50px;
+    text-align: center;
+    font-family: 'Anton', cursive;
+}
+  
+  .text-work {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-family: 'Anton', cursive;
+    font-size: 25px;
+    color: rgb(255, 255, 255); 
+  }
+  
+  label{
+    font-family: 'Anton', cursive;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+  }
+  
+  input{
+    width: 90%;
+    margin-left: 10px; 
+    padding: 0 10px;
+  }
+  
+  select{
+    margin-left: 10px;
+  }
+  
+  textarea {
+    margin-left: 10px;
+    width: 80%;
+  }
+  
+  .btn-enviar{
+    margin-top: 20px;
+    background-color: rgb(224, 191, 100);
+    font-family: 'Anton', cursive;
+    font-size: 20px;
+    border-radius: 20px;
+    width: 100px;
+    margin-bottom: 50px;
+  }
+  
+  @media (min-width: 768px){
+
+    input{
+      width: 400px;
+    }
+    
+    label{
+      font-family: 'Anton', cursive;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+      padding: 15px;
+    }
+
+    .tittle-work h2{
+      color: black;
+      text-shadow: rgb(198, 166, 8) 4px 5px;
+      padding-top: 450px;
+      font-size: 50px;
+      font-weight: 50px;
+      text-align: center;
+      font-family: 'Anton', cursive;
+    }
+    
+    .text-work{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      font-family: 'Anton', cursive;
+      font-size: 25px;
+      color: rgb(255, 255, 255); 
+    }
+  }
+  
