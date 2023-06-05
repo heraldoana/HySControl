@@ -3,21 +3,11 @@
 }
 
 .subtittle-service{
-    color: map-get($colores, "color-tittle2");
-    font-size: 40px;
-    font-weight: 50px;
-    font-family: 'Bebas Neue', cursive;
-    text-align: center;
+    @include titulo-2;
 }
 
 .tittle-1 h1{
-    color: map-get($colores, "color-tittle2");
-    text-shadow: map-get($colores, "color-sombra2") 4px 5px;
-    padding-top: 50px;
-    font-size: 50px;
-    font-weight: 50px;
-    text-align: center;
-    font-family: 'Anton', cursive;
+    @include titulo(50px);
 }
 
 .text-other{
@@ -51,13 +41,7 @@
 }
 
 .tittle-2 {
-    color: map-get($colores, "color-tittle2");
-    text-shadow: map-get($colores , "color-sombra2" ) 4px 5px;
-    padding-top: 50px;
-    font-size: 50px;
-    font-weight: 50px;
-    text-align: center;
-    font-family: 'Anton', cursive;
+    @include titulo(50px) ;
 }
 
 .logo-subtittle{

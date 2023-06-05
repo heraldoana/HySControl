@@ -14,7 +14,6 @@ header {
   text-align: center;
   position: sticky;
 }
-
 header .menu-icon {
   cursor: pointer;
   font-size: 28px;
@@ -27,7 +26,6 @@ nav ul li a {
   font-size: 20px;
   padding: 10px 10px;
 }
-
 nav ul li a:hover {
   text-decoration: none;
   color: rgb(255, 149, 0);
@@ -36,26 +34,22 @@ nav ul li a:hover {
 }
 
 @media (min-width: 768px) {
-  header {
-    position: sticky;
-  }
   header .menu-icon {
+    display: none;
+  }
+  header .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    color: gold;
+    padding: 1rem;
     display: none;
   }
   main {
     padding-top: 10px 20px;
   }
 }
-header .menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  color: gold;
-  padding: 1rem;
-  display: none;
-}
-
 @media (min-width: 768px) {
   header .menu {
     position: relative;
@@ -301,7 +295,7 @@ aside p {
 
 .subtittle-service {
   color: black;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 50px;
   font-family: "Bebas Neue", cursive;
   text-align: center;
@@ -488,13 +482,12 @@ textarea {
 
 .caratula-contacto h1 {
   color: black;
-  text-shadow: rgb(198, 166, 8);
+  text-shadow: rgb(198, 166, 8) 4px 5px;
   padding-top: 350px;
   font-size: 50px;
   font-weight: 50px;
   text-align: center;
   font-family: "Anton", cursive;
-  padding-bottom: 100px;
 }
 
 .paginacontact {
@@ -520,7 +513,7 @@ textarea {
 }
 
 .page-signin {
-  padding-top: 100px;
+  padding-top: 0px;
 }
 
 .container {

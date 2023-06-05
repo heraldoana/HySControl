@@ -1,6 +1,6 @@
 
 .page-signin{
-    padding-top: 100px;
+    padding-top: 0px;
 }
 
 .container{
@@ -45,17 +45,11 @@
 } 
     
 .columna-1 {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include columna(50px);
 }
-    
+   
 .columna-2 {
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include columna(100px);
 }
     
 .whatsapp-sigin{

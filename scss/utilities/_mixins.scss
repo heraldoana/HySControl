@@ -1,0 +1,28 @@
+@mixin titulo-2{
+    color: black;
+    font-size: 30px;
+    font-weight: 50px;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+}
+
+@mixin titulo ($alto){
+    color: black;
+    text-shadow: rgb(198, 166, 8) 4px 5px;
+    padding-top: $alto;
+    font-size: 50px;
+    font-weight: 50px;
+    text-align: center;
+    font-family: "Anton", cursive;
+}
+
+@mixin columna ($alto){
+    padding-top: $alto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+

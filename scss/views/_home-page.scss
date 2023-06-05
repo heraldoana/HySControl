@@ -38,11 +38,7 @@
 }
 
 h2, h3{
-    color: map-get($colores, "color-tittle2");
-    font-size: 30px;
-    font-weight: 50px;
-    font-family: 'Bebas Neue', cursive;
-    text-align: center;
+    @include titulo-2;
 }
 
 .funcionamiento-contenedor{

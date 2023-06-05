@@ -7,14 +7,7 @@
   }
 
 .caratula-contacto h1{
-    color: map-get($colores, "color-tittle2");
-    text-shadow: map-get($colores, "color-sombra2");
-    padding-top: 350px;
-    font-size: 50px;
-    font-weight: 50px;
-    text-align: center;
-    font-family: 'Anton', cursive;
-    padding-bottom: 100px;
+  @include titulo(350px);
 }
 
 .paginacontact{
