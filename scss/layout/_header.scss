@@ -6,7 +6,7 @@ header {
     left: 0;
     width: 100%;
     text-align: center;
-    position: fixed;
+    position: sticky;
 }
 
 header .menu-icon {
@@ -29,6 +29,9 @@ font-size: 40px;
 }
 
   @media (min-width: 768px) {
+    header{
+      position: sticky;
+    }
     header .menu-icon {
       display: none;
     }

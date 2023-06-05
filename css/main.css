@@ -12,7 +12,7 @@ header {
   left: 0;
   width: 100%;
   text-align: center;
-  position: fixed;
+  position: sticky;
 }
 
 header .menu-icon {
@@ -36,6 +36,9 @@ nav ul li a:hover {
 }
 
 @media (min-width: 768px) {
+  header {
+    position: sticky;
+  }
   header .menu-icon {
     display: none;
   }
@@ -293,7 +296,7 @@ aside p {
   }
 }
 .page-service {
-  padding-top: 100px;
+  padding-top: 0px;
 }
 
 .subtittle-service {
