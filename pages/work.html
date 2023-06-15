@@ -23,10 +23,10 @@
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
     </head>
 <body>
-    <header>
-        <div data-aos="fade-right" class="logoytitle_header_menu">
+    <header data-aos="fade-right">
+        <div class="logoytitle_header_menu">
             <div class="logo_header">
-                <img class="logo" src="../img/logohyscontrol.png" alt="logo de la pagina">
+                <a href="../index.html"> <img class="logo" src="../img/logohyscontrol.png" alt="logo de la pagina"> </a>
             </div>
             <div class="title_header">
                 HyS Control
@@ -50,35 +50,38 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="tittle-work">
-                            <h1 data-aos="fade-right">TRABAJA CON NOSOTROS</h1>
+                            <h1>TRABAJA CON NOSOTROS</h1>
                         </div>
                         <div class="text-work">
-                            <p data-aos="fade-right">Si queres unirte a nuestro equipo de trabajo, completa los siguientes datos.</p>      
+                            <p>Si queres unirte a nuestro equipo de trabajo, completa los siguientes datos.</p>      
                         </div>
                     </div>
                 </div>
             </div>
-            <form method="post" class="formulariocv">
-                <div class="input-wrapper">
-                    <label data-aos="fade-right" for="apellido">Apellido y Nombres:</label>
-                    <input data-aos="fade-left" type="text" name="nombre" id="apellido" placeholder="Juarez Pedro Armando">                    
-                </div>
-                <div class="input-wrapper">
-                    <label data-aos="fade-right" for="correo electronico">Correo electronico:</label>
-                    <input data-aos="fade-left" type="email" name="correo" id="correo" placeholder="correo@example.com">    
-                </div>
-                <div>
-                    <label data-aos="fade-right" for="apellido">Cargar CV</label>
-                    <input data-aos="fade-left" class="btncargar" type="file" value="Buscar archivo">
-                </div>
-                <div>  
-                    <input data-aos="fade-up" class="btn-enviar"  type="submit" value="Enviar">  
-                </div>
+            <div data-aos="fade-up">
+                <form method="post" class="formulariocv">
+                    <div class="input-wrapper">
+                        <label for="apellido">Apellido y Nombres:</label>
+                        <input type="text" name="nombre" id="apellido" placeholder="Juarez Pedro Armando">                    
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="correo electronico">Correo electronico:</label>
+                        <input type="email" name="correo" id="correo" placeholder="correo@example.com">    
+                    </div>
+                    <div>
+                        <label for="apellido">Cargar CV</label>
+                        <input class="btncargar" type="file" value="Buscar archivo">
+                    </div>
+                    <div>  
+                        <input class="btn-enviar"  type="submit" value="Enviar">  
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer data-aos="fade-up" >
         <div class="datosyredes-contenedor">
-            <div data-aos="fade-up" class="datos">
+            <div class="datos">
                 <h4>Nuestros Datos</h4>
                 <ul>
                     <li>Cel: +543815115596</li>
@@ -87,7 +90,7 @@
                     <li>Dirección: 24 de Septiembre 1182.</li>
                 </ul>
             </div>
-            <div data-aos="fade-up" class="redes">
+            <div class="redes">
                 <h4>Nuestras redes sociales</h4>
                 <p>Conocenos a traves de nuestras redes</p>
                 <img src="../img/iconoinstagram.png" alt="logo de instagram" width="100px">

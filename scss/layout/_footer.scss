@@ -42,7 +42,8 @@ font-size: 20px;
 }
 
 footer .whatsapp{
-    position: fixed;
+    position: sticky;
     bottom: 10px;
     right: 30px;
+    overflow-x: hidden;
 }
