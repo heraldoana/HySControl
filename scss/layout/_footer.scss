@@ -4,21 +4,31 @@ footer {
     background-image: linear-gradient(to top, rgb(13, 13, 13), rgb(64, 64, 34));
     font-size: 25px;
     font-family: 'Bebas Neue', cursive;
-}
-
-footer h4,h5{
+    h4 {
         color: #000000;
         font-size: 30px;
         font-weight: 50px;
         font-family: 'Bebas Neue', cursive;
         text-align: center;
+    }
+    h5 {
+        color: #000000;
+        font-size: 30px;
+        font-weight: 50px;
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+    }
 }
 
-footer ul li{
-padding: 5px;
-list-style: none;
-font-size: 20px;
-}
+footer{
+    ul {
+        li{
+            padding: 5px;
+            list-style: none;
+            font-size: 20px;
+        }
+    }
+} 
 
 .datosyredes-contenedor{
     display: flex;
@@ -26,24 +36,28 @@ font-size: 20px;
 }
 
 @media (min-width: 768px){
-  .datosyredes-contenedor{
+    .datosyredes-contenedor{
       display: grid;
       grid-template-areas: 
       "datos redes";
       padding: 1rem;
       gap: 15rem;
-      }
+    }
 }
 
-.datosyredes-contenedor p{
-    font-size: 20px;
-    font-family: 'Bebas Neue', cursive;
-    color: gold;
-}
+.datosyredes-contenedor{
+    p{
+        font-size: 20px;
+        font-family: 'Bebas Neue', cursive;
+        color: gold;
+    }
+} 
 
-footer .whatsapp{
-    position: sticky;
-    bottom: 10px;
-    right: 30px;
-    overflow-x: hidden;
-}
+footer{
+    .whatsapp{
+        position: sticky;
+        bottom: 10px;
+        right: 30px;
+        overflow-x: hidden;
+    }
+} 

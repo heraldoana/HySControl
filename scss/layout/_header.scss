@@ -1,113 +1,123 @@
 header {
-    background-image: map-get($colores, "color-header");
-    color: map-get($colores , "color-tittle+menu");
-    padding: 10px 20px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    position: sticky;
-    .menu-icon {
-      cursor: pointer;
-      font-size: 28px;
-    }
+  background-image: map-get($colores, "color-header");
+  color: map-get($colores , "color-tittle+menu");
+  padding: 10px 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  position: sticky;
+  .menu-icon {
+    cursor: pointer;
+    font-size: 28px;
   }
+  a {
+    text-decoration: none;
+    color: map-get($colores, "color-enlaces");
+  }
+}
 
 nav{
-  ul{ 
-    li{ 
-      a{
-    text-decoration: none;
-    color: map-get($colores , "color-enlaces");
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
-    padding: 10px 10px;
+  ul { 
+    li { 
+      a {
+      text-decoration: none;
+      color: map-get($colores , "color-enlaces");
+      font-family: 'Bebas Neue', cursive;
+      font-size: 20px;
+      padding: 10px 10px;
+        &:hover{
+          text-decoration: none;
+          color: map-get($colores , "color-enlaces2");
+          font-family: 'Bebas Neue', cursive;
+          font-size: 40px;
+        }
       }
-    a:hover{
-        text-decoration: none;
-        color: map-get($colores , "color-enlaces2");
-        font-family: 'Bebas Neue', cursive;
-        font-size: 40px;
-    }
     }
   }
 }
 
-  @media (min-width: 768px) {
-
-    header {
-      overflow-x: hidden;
-      .menu-icon {
-      display: none;
-      }
-      .menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        color: map-get($colores, "color-tittle+menu");
-        padding: 1rem;
-        display: none;
-      }
-    }
-    main{
-      padding-top: 10px 20px;
-    }
-  }
-
-
-  @media (min-width: 768px) {
-    header .menu {
-      position: relative;
-    }
-  }
-  header input[type=checkbox] {
+@media (min-width: 768px) {
+  header {
+    overflow-x: hidden;
+    .menu-icon {
     display: none;
+    }
+    .menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      color: map-get($colores, "color-tittle+menu");
+      padding: 1rem;
+      display: flex;
+    }
   }
-  header input[type=checkbox]:checked ~ .menu {
-    display: block;
-    background-color: map-get($colores, "color-menucell");
+  main{
+    padding-top: 10px 20px;
   }
-  header ul {
+}
+
+@media (min-width: 768px) {
+  header .menu {
+    position: relative;
+  }
+}
+  
+header {
+  input[type=checkbox] {
+    display: none;
+    &[type=checkbox]:checked ~ .menu {
+      display: block;
+      background-color: map-get($colores, "color-menucell");
+    } 
+  }
+  ul {
     list-style: none;
   }
-  @media (min-width: 768px) {
-    header ul {
+}
+  
+@media (min-width: 768px) {
+  header {
+    ul {
       width: 100%;
       display: flex;
       gap: 20px;
       justify-content: end;
     }
-    nav ul li a{
+  }
+  nav{
+    ul{
+      li{
+        a{
         text-decoration: none;
         color: map-get($colores, "color-header");
         font-family: 'Bebas Neue', cursive;
         font-size: 20px;
         padding: 10px 10px;
+          &:hover{
+            text-decoration: none;
+            color: map-get($colores, "color-enlaces2");
+            font-family: 'Bebas Neue', cursive;
+            font-size: 40px;
+          }
+          &:active{
+            text-decoration: none;
+            color: map-get($colores, "color-enlaces3");
+            font-family: 'Bebas Neue', cursive;
+            font-size: 30px;
+          }
+        }
+      }
     }
-    nav ul li a:hover{
-    text-decoration: none;
-    color: map-get($colores, "color-enlaces2");
-    font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
-    }
-    nav ul li a:active{
-    text-decoration: none;
-    color: map-get($colores, "color-enlaces3");
-    font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
-    }
+  }
 }
 
-  header a {
-    text-decoration: none;
-    color: map-get($colores, "color-enlaces");
-  }
-
-
-.logo_header img{
+.logo_header {
+  img{
     height: 80px;
     width: 80px;
+  }
 }
 
 .title_header{
@@ -138,18 +148,19 @@ nav{
     display: none;
   }
   
-  input[type="checkbox"]{
-    display: none;
-  }
-  
-  input[type="checkbox"]:checked ~ .menu{
+input{
+  & [type="checkbox"]{
+      display: none;
+    }
+  &  [type="checkbox"]:checked ~ .menu{
     display: block;
   }
+}
+
+ul{
+  list-style: none;
+}
   
-  ul{
-    list-style: none;
-  }
-  
-  a{
-    text-decoration: none;
-  }
+a{
+  text-decoration: none;
+}

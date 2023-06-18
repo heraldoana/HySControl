@@ -6,9 +6,11 @@
     @include titulo-2;
 }
 
-.tittle-1 h1{
-    @include titulo(50px);
-}
+.tittle-1{
+    h1{
+        @include titulo(50px);
+    }
+} 
 
 .text-other{
     padding-top: 20px;

@@ -18,6 +18,10 @@ header .menu-icon {
   cursor: pointer;
   font-size: 28px;
 }
+header a {
+  text-decoration: none;
+  color: rgb(240, 216, 3);
+}
 
 nav ul li a {
   text-decoration: none;
@@ -34,6 +38,9 @@ nav ul li a:hover {
 }
 
 @media (min-width: 768px) {
+  header {
+    overflow-x: hidden;
+  }
   header .menu-icon {
     display: none;
   }
@@ -44,7 +51,7 @@ nav ul li a:hover {
     width: 100%;
     color: gold;
     padding: 1rem;
-    display: none;
+    display: flex;
   }
   main {
     padding-top: 10px 20px;
@@ -53,18 +60,15 @@ nav ul li a:hover {
 @media (min-width: 768px) {
   header .menu {
     position: relative;
-    display: flex;
   }
 }
 header input[type=checkbox] {
   display: none;
 }
-
-header input[type=checkbox]:checked ~ .menu {
+header input[type=checkbox][type=checkbox]:checked ~ .menu {
   display: block;
   background-color: #333;
 }
-
 header ul {
   list-style: none;
 }
@@ -96,11 +100,6 @@ header ul {
     font-size: 30px;
   }
 }
-header a {
-  text-decoration: none;
-  color: rgb(240, 216, 3);
-}
-
 .logo_header img {
   height: 80px;
   width: 80px;
@@ -134,11 +133,10 @@ header a {
   display: none;
 }
 
-input[type=checkbox] {
+input [type=checkbox] {
   display: none;
 }
-
-input[type=checkbox]:checked ~ .menu {
+input [type=checkbox]:checked ~ .menu {
   display: block;
 }
 
@@ -157,8 +155,14 @@ footer {
   font-size: 25px;
   font-family: "Bebas Neue", cursive;
 }
-
-footer h4, h5 {
+footer h4 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 50px;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+}
+footer h5 {
   color: #000000;
   font-size: 30px;
   font-weight: 50px;
@@ -192,9 +196,10 @@ footer ul li {
 }
 
 footer .whatsapp {
-  position: fixed;
+  position: sticky;
   bottom: 10px;
   right: 30px;
+  overflow-x: hidden;
 }
 
 .principal-box {
@@ -225,7 +230,6 @@ footer .whatsapp {
   text-shadow: 50px;
   font-size: 50px;
   font-family: "Bebas Neue", cursive;
-  font-size: 40px;
 }
 
 .secundario-box {
@@ -247,7 +251,6 @@ h2, h3 {
   justify-content: column;
   text-align: center;
 }
-
 .funcionamiento-contenedor p {
   font-family: "Anton", cursive;
   font-size: 20px;
@@ -261,6 +264,21 @@ h2, h3 {
     grid-template-areas: "funcion-1 funcion-2 funcion-3 funcion-4";
     padding: 1rem;
     justify-content: center;
+    text-align: center;
+  }
+  .principal-box__title h1 {
+    color: white;
+    text-shadow: 50px;
+    font-size: 50px;
+    font-family: "Bebas Neue", cursive;
+  }
+  .texto-ppal {
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-family: "Anton", cursive;
     text-align: center;
   }
 }
